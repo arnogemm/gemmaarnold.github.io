@@ -1,0 +1,164 @@
+body {
+font-family: arial;
+background-color: pink;
+}
+.main img {
+   position: relative;
+    float: center;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+  width: 0%;  /* see nav active to change it to open */
+  position: fixed;
+  bottom: 0px;
+  z-index: 10; /* zindex is stacking order */
+  font-size: 200%;
+  color: green;
+}
+
+.nav {
+  width:0%;  /* going from nothing to something */
+  height: 100vh; /* veiwport height */
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: yellow;
+  overflow: hidden;
+}
+.nav.active{
+  width: 25%; /* see .menu  - when you click menu it will become 'active' and open at 0.5s */
+  transition: 0.5s;  /* transition is how long it takes to come out */
+  z-index: 9;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  cursor:pointer;
+}
+
+.button:hover {
+background-color: white;
+color: pink;
+
+}
+
+
+.col.show {
+  display: block;
+
+}
+.col.hide {
+  display: none;
+}
+.row {
+  overflow: hidden;
+}
+.col {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.col img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.col:hover .imagedescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imagedescription {
+  position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgb(255,192,203, 0.72);
+ color: white;
+ text-align: center;
+ padding-top: 60%;
+ visibility: hidden;
+ opacity: 0;
+ font-size: 150%;
+ letter-spacing: 3px;
+ font-family: sans-serif;
+
+
+ /* transition effect. not necessary */
+ transition: opacity .2s, visibility .2s;
+}
+
+.header1 {
+
+  text-align: center;
+  color: White;
+  font-size: 100%;
+  background-color: #FED2DA;
+  text-transform: uppercase;
+  text-shadow: 4px -1px 2px pink;
+  z-index: 9;
+  position: sticky;
+  align-items: center;
+  font-weight: bolder;
+
+
+}
+
+.resize {
+  width: 300px;
+}
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #FED2DA;
+  z-index: 1;
+  text-align: center;
+  text-transform: lowercase;
+
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.row-sticky {
+  margin-top:150px;
+}
+
+.newpage {
+  color: white;
+  background-color: #FED2DA;
+  z-index: 2;
+  width: 70px;
+  position: fixed;
+  text-align: center;
+  bottom: 20px;
+  right: 30px;
+  padding: 20px;
+  text-transform: lowercase;
+
+
+}
