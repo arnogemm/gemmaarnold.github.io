@@ -58,7 +58,7 @@ var TxtType = function(el, toRotate, period) {
 
     // end of typewriter js
 
-    
+
 // start of Dropdown
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
