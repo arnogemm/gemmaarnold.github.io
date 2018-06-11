@@ -1,26 +1,148 @@
-p.poem {
+body{
+  justify-content: center;
+  font-style: freight-sans;
+}
+  p.poem {
   font-family: sans-serif;
   font: Proxima Novafor;
   position: absolute;
   background-color: white;
-
-}
-img.instagram{
-  max-width: 100%;
-  max-height: auto;
-
 }
 
-h1{
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.instagraminsta {
+  max-height: 20px;
+  display: block;
+  max-width: 50px;
+  margin-right: 5px;
+
+}
+
+.instagramlogo {
+  max-height: 30px;
+  display: block;
+  max-width: 60px;
+  margin-right: 250px;
+  margin-top: 5px;
+
+}
+
+.instagramheart {
+  max-height: 60px;
+  display: block;
+  max-width: 110px;
+  margin-left: 250px;
+}
+
+.searchbar {
+  text-align: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  text-align: left;
   font-family: sans-serif;
-  font: Proxima Novafor;
 }
-span {
-  max-width: 100%;
-  align-content: center;
+
+.one {
+  margin-left: 130px;
+}
+
+.end {
+  margin-right: 15px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+}
+.lineone {
+  display: flex;
+  justify-content: center;
+}
+.name {
+  max-width: 90px;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.following {
+  max-width: 100px;
+  max-height: 20px;
+  display: flex;
+  justify-content: center;
 
 }
-img.images {
-  max-width: 90%;
-  max-height: auto;
+
+.numbdeadocean {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-left: 535px;
+
+}
+
+.thepoem {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  background-color: #fafafa;
+  height: 400px;
+  text-align: left;
+  justify-content: center;
+}
+
+.aestheticalogo {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.aestheticalogo {
+  max-width: 150px;
+  justify-content: center;
+  display: flex;
+  max-height: 150px;
+  z-index: 2;
+  position: absolute;
+}
+
+.aeslogo {
+  justify-content: center;
+  display: flex;
+  z-index: 2;
+  top: 50px;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.velvet {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+}
+
+.numb {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+}
+
+.ocean {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
 }
