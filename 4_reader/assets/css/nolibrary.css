@@ -1,4 +1,356 @@
 body {
-  background-color:yellow;
+  background-color:orange;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.buttons {
+  justify-content: center;
   text-align: center;
+  height: 100px;
+  margin-top: 25px;
+  position: fixed;
+  z-index: 3;
+  background-color: orange;
+  margin: 0 0 0 0;
+  width: 100%;
+  padding-top: 35px;
+  text-transform: uppercase;
+
+
+
+}
+
+a:link {
+    text-decoration: none;
+    background-color: orange;
+    padding: 15px;
+    color: white;
+    font-style: bold;
+    font-family: futura;
+}
+
+
+a:visited {
+  text-decoration:underline;
+  color: white;
+}
+
+a:hover {
+    text-decoration:underline;
+    color: #54ddc6;
+}
+
+a:active {
+  text-decoration:underline;
+  color: #54ddc6;
+
+}
+
+
+
+
+
+
+
+.space {
+  height: 50px;
+  padding-top: 150px;
+  justify-content: center;
+  text-align: center;
+  background-color: orange;
+}
+
+.spacetwo {
+  height: 500px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+
+    padding: 15px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: 200px;
+    overflow: hidden;
+    margin-bottom: 200px;
+    top: 50%;
+    z-index: 1.5;
+
+
+
+
+
+}
+.numberone{
+  margin-top: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    clear: both;
+}
+
+.row:before {
+    content: "";
+    clear: both;
+}
+
+.one {
+width:300px;
+height: 350px;
+/* background-color: #B2612D; */
+display: block;
+font-size: 150%;
+overflow: hidden;
+text-align: center;
+float: left;
+margin-left: 25%;
+position: relative;
+ color: white;
+ /* padding-top: 50px; */
+ text-transform: uppercase;
+ background-color: #54ddc6;
+ vertical-align: middle;
+  z-index: 2;
+
+
+}
+
+h1 {
+  background-color: #54ddc6;
+  /* padding: 10px;
+  padding-right: 10px; */
+   line-height: normal;
+   text-shadow: 2px 2px #b9b8b9;
+   font-family: sans-serif futura;
+    vertical-align: middle;
+    margin: 0;
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%);
+  width: 250px;
+
+}
+
+.two {
+  width:300px;
+  height: 350px;
+  /* background-color: #B2612D; */
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  position: relative;
+   color: #54ddc6;
+   z-index: 2;
+   background-color: #54ddc6;
+   vertical-align: middle;
+}
+
+.para {
+
+   line-height: normal;
+   font-family: sans-serif futura;
+   vertical-align: middle;
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%);
+   overflow: none;
+   width:250px;
+   color: white;
+
+
+}
+
+.orangey {
+  padding: 20px;
+  background-color: orange;
+  width: : 640px;
+}
+
+.row {
+  z-index: 2;
+}
+
+.numberone {
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+.numbertwo {
+  background:
+  linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+  linear-gradient(63deg, transparent 74%, #999 78%),
+  linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+  #444;
+  background-size: 16px 48px;
+}
+.numberthree {
+  background:
+  radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+  background-color: slategray;
+  background-size:75px 100px;
+}
+.numberfour {
+  background-color:#def;
+  background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+  radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+  background-size:80px 80px;
+  background-position:0 0, 40px 40px;
+}
+.numberfive {
+  background-color:silver;
+  background-image:
+  radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+}
+
+.numbersix {
+  background:
+  linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+  linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px
+}
+.numberseven {
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+}
+
+.numbereight {
+  background:
+  radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+  background-color: slategray;
+  background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+.numbernine {
+  background-color:#556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+.numberten {
+  background-color: gray;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  background-size: 50px 50px;
+}
+.footer {
+  height: 100px;
+  background-color: orange;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  text-align:center;
+}
+
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:300px;
+  position:relative;
+  width:100%;
+  bottom:45%;
+  display:block;
+  background-color: #515050;
+  padding-bottom: 150px;
+  height: 600px;
+}
+
+#flip {
+  height:60px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:white;
+  padding:4px 12px;
+  height:60px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:orange;
+}
+#flip div:first-child div {
+  background:#54ddc6;
+}
+#flip div:last-child div {
+  background:#54ddc6;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:relative;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+  z-index: 0;
+}
+
+.three {
+  height: 100px;
+  background-color: orange;
+  width: 100%;
+    position: relative;
+    padding: 15px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-content: center;
+    display: block;
+    position: absolute;
+    margin-top: 300px;
+    overflow: hidden;
+    z-index: 1;
 }

@@ -1,133 +1,180 @@
+/* setup you body with your general font and colour */
 body {
-  background-color:#ce3635;
-  font-family: arial;
-
-}
-/* texttype typrewriter */
-* { color:#fff; text-decoration: none;}
-.thetype {
-  color: white;
-  text-align: left;
-
-  text-decoration: none;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    z-index: 3;
-    float: right;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-/*  */
-
-div.writing {
-  width: 400px;
-  display: inline-block;
-  float: right;
-  margin-left: 450px;
-
-}
-
-.all {
-
-
-}
-
-.sideright {
-  text-align: left;
-  color: white;
-  background-color: orange;
-  padding: 15px;
-  width: 400px;
-
-}
-
-.sideleft {
-  text-align: left;
-  color: white;
-  background-color: pink;
-  padding: 15px;
+  color: #fff;
+  font-size:20px;
+  font-family: sans-serif;
 }
 
 
-.bold {
-  font-weight: bold;
+#myDIV {
+    text-align: center;
+    background-color: #264653;
+    width: 50vw;
+    position:fixed;
+    margin-top:100px;
+    justify-content: center;
+    z-index: 2;
+    height:80vh;
+    color: #36bdb1;
+}
+
+#myDIVtwo {
   text-align: center;
-  color: green;
-  font-size: 110%;
+  background-color: #36bdb1;
+  width: 50vw;
+  position:fixed;
+  margin-top:100px;
+  justify-content: center;
+  z-index: 2;
+  height:80vh;
+  color: #264653;
+}
+.thebuttonone:hover {
+  background-color: #36bdb1;
 }
 
-.overflow{
+.thebuttontwo:hover {
+  background-color: #264653;
+}
+
+.thebuttonone {
+  background-color: #ffd077;
+  width: 50vw;
+  position:fixed;
+  left:0;
+  top:0;
+  justify-content: center;
+  padding: none;
+  height: 100px;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+  color: #264653;
+}
+.thebuttontwo {
+  background-color: #faf287;
+  width: 50vw;
+  position: fixed;
+  right:0;
+  top:0;
+  justify-content: center;
+  margin: 0 0 0 0;
+  height: 100px;
+  color: #264653;
+  text-transform: uppercase;
+  color: #36bdb1;
+
+}
+/* for both .panels you make them 100vh (stands for view height) with 60vw (view width) and overflow scroll. If the content goes beyond the view height, allow the user to scroll */
+
+.buttonone {
+  background-color: #faf287;
+
+}
+
+.buttontwo {
+
+  background-color: #264653;
+
+}
+
+.panel {
+  height:80vh;
+  width: 50vw;
   overflow: scroll;
-  height: 20vh;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
 }
-
-/* bubble */
-
-.speech-bubble {
-    background-color: #orange;
-    border: 1px solid #c8c8c8;
-    border-radius: 5px;
-}
-
-.speech-bubble .arrow {
-    background-color: yellow;
-    position: absolute;
-}
-
-.bottom {
-    background-color: pink;
-}
-
-.bottom:after {
-    content: "";
-    position: absolute;
-    left: -7px;
-    background-color: pink;
-}
-
-.col {
+.buttons {
   display: inline-block;
+  margin-bottom: 30px;
+  padding-top: 25%;
+  font-size: 100px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-shadow: 2px 2px white;
 
+}
+
+/* left and right get different background colours, both are fixed, however .left is positioned left 0 and .right is right 0 */
+
+.left {
+  background-color: #faf287;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.right {
+  background-color: #ffd077;
+  position:fixed;
+  right:0;
+  top:0;
+}
+
+/* for each text-scroll you set a height and overflow for the scroll and padding to look nicer within the panel. Remember it will only scroll IF the content exceeds the height set.*/
+
+.text-scroll {
+  padding:20px;
+  margin:20px;
+  border-radius:20px;
+  height:75px;
+  overflow:scroll;
+}
+
+.c-one {
+  background-color: #ce6586;
+}
+
+.c-two {
+  background-color: #f58660;
+}
+.c-three {
+  background-color: #ce6586;
+}
+
+.c-four {
+  background-color: #f58660;
+}
+
+.footer {
+  z-index: 3;
+  height: 30px;
+  background-color: #36bdb1;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding-top: 5px;
+
+
+}
+
+.rob {
+  background-color: #faf287;
+  width: 50vw;
+  position:fixed;
+  left:0;
+  bottom:0;
+  justify-content: center;
+  padding: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #264653;
+  z-index: 3;
+}
+
+.dave {
+  background-color: #ffd077;
+  width: 50vw;
+  position: fixed;
+  right:0;
+  justify-content: center;
+  color: #264653;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #36bdb1;
+  z-index: 3;
+  bottom:0;
 }
