@@ -1,1 +1,122 @@
+* {
+    box-sizing: border-box;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    overflow: scroll;
+    padding: 25px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.container {
+  position: relative;
+  display: inline-block;
+  height:500px;
+  display: flex;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+body {
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.original {
+  height: 100px;
+  justify-content: center;
+  background-color: black;
+  color: green;
+  padding-top: 40px;
+  text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+
+    width: 100px;
+    padding: 10px;
+    height: 30px;/* Should be removed. Only for demonstration */
+    background-color: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.dog {
+  bottom: 0;
+  right: 0;
+  float: right;
+
+}
+
+.cat {
+  bottom: 0;
+  left: 0;
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+  position:fixed;
+  z-index: 6;
+}

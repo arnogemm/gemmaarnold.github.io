@@ -178,3 +178,47 @@ body {
   z-index: 3;
   bottom:0;
 }
+
+
+.column {
+
+    width: 100px;
+    padding: 10px;
+    height: 30px;/* Should be removed. Only for demonstration */
+    background-color: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.dog {
+  bottom: 0;
+  right: 0;
+  float: right;
+
+}
+
+.cat {
+  bottom: 0;
+  left: 0;
+  float: left;
+}
+
+/* Clear floats after the columns */
+.hrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hrow {
+  position:fixed;
+  z-index: 6;
+}
