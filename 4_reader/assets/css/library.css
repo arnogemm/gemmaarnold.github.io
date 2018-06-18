@@ -90,6 +90,7 @@ body {
     text-align: center;
     text-decoration: none;
 
+
 }
 
 a:visited {
@@ -110,13 +111,13 @@ a:visited {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.hrow:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.row {
+.hrow {
   position:fixed;
   z-index: 6;
 }
